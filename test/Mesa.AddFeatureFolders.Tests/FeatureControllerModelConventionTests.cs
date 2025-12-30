@@ -2,13 +2,13 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
     using System.Reflection;
     using Controllers;
     using Microsoft.AspNetCore.Mvc.ApplicationModels;
     using Project.Name.Features;
     using Project.Name.Features.Admin.ManageGolfers;
     using Project.Name.Features.Foo.Bar.Baz;
-    using static Xunit.Assert;
 
     public class FeatureControllerModelConventionTests
     {
@@ -19,6 +19,8 @@
         [InlineData ( typeof ( AboutController ) , @"" )]
         public void CanBuildPathFromControllerNamespace ( Type controller , string expected )
         {
+            expected = expected.Replace ( '\\' , Path.DirectorySeparatorChar );
+
             var options = new FeatureFolderOptions ( );
             var service = new FeatureControllerModelConvention ( options );
             var controllerType = controller.GetTypeInfo ( );
@@ -27,7 +29,7 @@
 
             service.Apply ( model );
 
-            Equal ( expected , model.Properties [ "feature" ] );
+            Assert.Equal ( expected , model.Properties [ "feature" ] );
         }
 
         [Fact]
@@ -35,7 +37,7 @@
         {
             var options = new FeatureFolderOptions ( )
             {
-                DeriveFeatureFolderName = c => @"Features\Foo"
+                DeriveFeatureFolderName = c => @$"Features{Path.DirectorySeparatorChar}Foo"
             };
             var service = new FeatureControllerModelConvention ( options );
             var controllerType = typeof ( ManageUsersController ).GetTypeInfo ( );
@@ -44,7 +46,7 @@
 
             service.Apply ( model );
 
-            Equal ( @"Features\Foo" , model.Properties [ "feature" ] );
+            Assert.Equal ( @$"Features{Path.DirectorySeparatorChar}Foo" , model.Properties [ "feature" ] );
         }
     }
 }
