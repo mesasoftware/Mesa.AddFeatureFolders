@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6C8D0F52-A4B8-43C2-8086-2C1591DF47DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{41A0898F-34AC-4A6F-9364-5BA432412C14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B55FC53B-F6B3-4504-B27F-3AFB6F77A4ED}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mesa.AddFeatureFolders", "src\Mesa.AddFeatureFolders\Mesa.AddFeatureFolders.csproj", "{8457098D-8253-4850-940C-07F6251447C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mesa.AddFeatureFolders.Tests", "test\Mesa.AddFeatureFolders.Tests\Mesa.AddFeatureFolders.Tests.csproj", "{94508FE6-05B4-4710-9044-0502899B8120}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{2E0AAEB6-AED9-473A-A190-9A21A4B8433D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mesa.AddFeatureFolders.WebApplication", "example\Mesa.AddFeatureFolders.WebApplication\Mesa.AddFeatureFolders.WebApplication.csproj", "{57682254-2854-446E-3E89-A9AEFDB1B8E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8457098D-8253-4850-940C-07F6251447C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8457098D-8253-4850-940C-07F6251447C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8457098D-8253-4850-940C-07F6251447C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8457098D-8253-4850-940C-07F6251447C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94508FE6-05B4-4710-9044-0502899B8120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94508FE6-05B4-4710-9044-0502899B8120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94508FE6-05B4-4710-9044-0502899B8120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94508FE6-05B4-4710-9044-0502899B8120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57682254-2854-446E-3E89-A9AEFDB1B8E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57682254-2854-446E-3E89-A9AEFDB1B8E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57682254-2854-446E-3E89-A9AEFDB1B8E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57682254-2854-446E-3E89-A9AEFDB1B8E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8457098D-8253-4850-940C-07F6251447C9} = {6C8D0F52-A4B8-43C2-8086-2C1591DF47DA}
+		{94508FE6-05B4-4710-9044-0502899B8120} = {41A0898F-34AC-4A6F-9364-5BA432412C14}
+		{57682254-2854-446E-3E89-A9AEFDB1B8E6} = {2E0AAEB6-AED9-473A-A190-9A21A4B8433D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C68330E8-CDF4-442F-A7DA-5AC070728EFD}
+	EndGlobalSection
+EndGlobal

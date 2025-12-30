@@ -1,9 +1,8 @@
 # AddFeatureFolders
-[![Build status](https://ci.appveyor.com/api/projects/status/k4aotmbkugavs2mq?svg=true)](https://ci.appveyor.com/project/OdeToCode/addfeaturefolders)
-### Installation
-```
-    Install-Package OdeToCode.AddFeatureFolders 
-```
+
+Status
+-------------
+[![.NET](https://github.com/mesasoftware/Mesa.AddFeatureFolders/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/mesasoftware/Mesa.AddFeatureFolders/actions/workflows/dotnet.yml)
 
 ### Usage 
 ```c#

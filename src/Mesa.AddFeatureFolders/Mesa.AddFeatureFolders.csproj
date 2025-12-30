@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>14.0</LangVersion>
+    <IsPackable>true</IsPackable>
+    <OutputType>Library</OutputType>
+    <SignAssembly>False</SignAssembly>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MESA AddFeatureForlders</Title>
+    <Description>Enable feature folders for MVC controllers and views in ASP.NET Core. Forked from OdeToCode.AddFeatureFolders.</Description>
+    <PackageProjectUrl>https://github.com/mesasoftware/Mesa.AddFeatureFolders</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/mesasoftware/Mesa.AddFeatureFolders</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>feature;csharp;net</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
